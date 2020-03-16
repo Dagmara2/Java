@@ -189,7 +189,7 @@ public class Controller {
 
         for (Asteroid a : asteroid) {
             asteroidTable.getItems().add(a);
-            asteroidTable.setItems();
+            //asteroidTable.setItems();
         }
 
     }
