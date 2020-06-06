@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" prefHeight="459.0" prefWidth="532.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="476.0" prefWidth="640.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ImageView fx:id="ogImg" fitHeight="185.0" fitWidth="250.0" layoutX="34.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="changedImg" fitHeight="185.0" fitWidth="250.0" layoutX="34.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="ogLabel" layoutX="133.0" layoutY="5.0" text="Original:" />
+            <Label fx:id="changedLabel" layoutX="133.0" layoutY="208.0" text="Changed:" />
+            <Button fx:id="formatBtn" layoutX="411.0" layoutY="143.0" mnemonicParsing="false" onAction="#format" text="Format" />
+            <Button fx:id="picBtn" layoutX="390.0" layoutY="23.0" mnemonicParsing="false" onAction="#picChoice" text="Choose Picture" />
+            <ComboBox fx:id="choiceBox" layoutX="371.0" layoutY="102.0" onAction="#formatChoice" prefHeight="26.0" prefWidth="134.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
