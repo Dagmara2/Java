@@ -1,0 +1,102 @@
+.pane {
+    -fx-background-color: #ea9696;
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #fff760;
+}
+
+.root {
+
+		-fx-background-color: #ea9696;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #ea9696;
+    -fx-text-fill: #e2e2e2;
+}
+.choice-box .context-menu { -fx-background-color: #ea9696; }
+
+.choice-box .menu-item:focused { -fx-background-color: #e2e2e2; }
+
+.choice-box .menu-item > .label { -fx-text-fill: #1d1d1d; }
+
+.choice-box .menu-item:focused > .label { -fx-text-fill: #ea9696; }
+
+.choice-box{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-background-color: #ea9696;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+
+    -fx-mark-color: #e2e2e2;
+}
+
+.choice-box > .label {  -fx-text-fill: #e2e2e2;}
+
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #ea9696;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #e2e2e2;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #ea9696;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+.text-area {
+    -fx-font-size: 12pt;
+
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #d8d8d8;
+    -fx-opacity: 1;
+}
+  .text-area .content{
+      -fx-background-color: #ea9696;
+         -fx-border-color: #e2e2e2;
+         -fx-border-width: 2;
+  }
+

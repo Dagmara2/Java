@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="409.0" prefWidth="604.0">
+         <fx:script>
+            var System = Java.type("java.lang.System")
+            var File = Java.type("java.io.File")
+            var BufferedReader = Java.type("java.io.BufferedReader")
+            var String = Java.type("java.lang.String")
+            var Math = Java.type("java.lang.Math")
+
+            var BirthdayWishes=['A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!', 'Another adventure filled year awaits you. Welcome it by celebrating your birthday with pomp and splendor. Wishing you a very happy and fun-filled birthday!', 'May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!', 'Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!', 'Happy birthday! I hope all your birthday wishes and dreams come true.' ]
+            var MothersDayWishes=['Thank you for laughing with us in the best of times and sticking with us through the worst of times! What would we do without you?', 'Happy Mothers Day! Thank you for always being the shining example of what I wanted to be like when I grew up!', 'Happy Mothers Day! Thank you for everything you have done for us. It is more than we can ever repay you!', 'Thank you for every hug, word of encouragement, and acts of love you have given me. Happy Mothers Day!', 'I love you and wish you the best Mothers Day!']
+            var FathersDayWishes=['Wishing you a Happy Fathers Day on this day, and wishing you happiness and sunshine for the coming year. Thanks for all you are and all you do.', 'There were times in my life when I did not understand but you always took the time to help me and be there for me. Thank you!', 'May the love and respect we feel for you make up for the worry and care we have caused you.', 'The greatest gift, the most wonderful blessing in my life is having you as a Dad!', 'Dad thank you for all that you are and all that you have done.']
+            var AnniversaryWishes=['I want to love you, adore you, take care of you and make you the happiest person there ever was for all of time.',  'When a love is true, there is no ending. I hope we get to celebrate for many years to come. Happy anniversary!', 'There is no one I would rather sit on the couch watching TV with. Happy anniversary!', 'Every love story is special, unique and beautiful—but ours is my favorite.', 'Marrying you was the smartest thing I ever did']
+
+            var rand = Math.floor(Math.random() * (4 - 0 + 1)) + 0;
+
+            function buttonAction1(event){
+            var choiceB= choice.getSelectionModel().getSelectedItem();
+            wishesArea.clear();
+            if(choiceB=="Random"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + BirthdayWishes[rand]);
+            }
+            if(choiceB=="Longest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + BirthdayWishes[0]);
+            }
+            if(choiceB=="Shortest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + BirthdayWishes[4]);
+            }
+            }
+            function buttonAction2(event){
+            var choiceB= choice.getSelectionModel().getSelectedItem();
+            wishesArea.clear();
+            if(choiceB=="Random"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + MothersDayWishes[rand]);
+            }
+            if(choiceB=="Longest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + MothersDayWishes[0]);
+            }
+            if(choiceB=="Shortest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + MothersDayWishes[4]);
+            }
+            }
+            function buttonAction3(event){
+            var choiceB= choice.getSelectionModel().getSelectedItem();
+            wishesArea.clear();
+            if(choiceB=="Random"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + FathersDayWishes[rand]);
+            }
+            if(choiceB=="Longest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + FathersDayWishes[0]);
+            }
+            if(choiceB=="Shortest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + FathersDayWishes[4]);
+            }
+            }
+            function buttonAction4(event){
+            var choiceB= choice.getSelectionModel().getSelectedItem();
+            wishesArea.clear();
+            if(choiceB=="Random"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + AnniversaryWishes[rand]);
+            }
+            if(choiceB=="Longest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + AnniversaryWishes[0]);
+            }
+            if(choiceB=="Shortest"){
+            wishesArea.setText("Dear " + nameTF.getText()+ "! " + AnniversaryWishes[4]);
+            }
+            }
+
+
+         </fx:script>
+         <children>
+            <TextField fx:id="nameTF" layoutX="34.0" layoutY="33.0" promptText="Name" />
+            <ChoiceBox fx:id="choice" layoutX="327.0" layoutY="36.0" prefWidth="150.0" value="Random">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Random" />
+                     <String fx:value="Longest" />
+                     <String fx:value="Shortest" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Button fx:id="bDayBtn" layoutX="34.0" layoutY="111.0" mnemonicParsing="false" onAction="buttonAction1(event);" text="Birthday" />
+            <Button fx:id="mDayBtn" layoutX="148.0" layoutY="111.0" mnemonicParsing="false" onAction="buttonAction2(event);" prefHeight="34.0" prefWidth="135.0" text="Mother's Day" />
+            <Button fx:id="fDayBtn" layoutX="302.0" layoutY="111.0" mnemonicParsing="false" onAction="buttonAction3(event);" text="Father's Day" />
+            <Button fx:id="AnnBtn" layoutX="446.0" layoutY="111.0" mnemonicParsing="false" onAction="buttonAction4(event);" text="Anniversary" />
+            <TextArea fx:id="wishesArea" layoutX="40.0" layoutY="171.0" prefHeight="215.0" prefWidth="524.0" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
