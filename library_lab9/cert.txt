@@ -1,0 +1,11 @@
+keytool error: java.io.IOException: DerInputStream.getLength(): lengthTag=109, too big.
+java.io.IOException: DerInputStream.getLength(): lengthTag=109, too big.
+	at sun.security.util.DerInputStream.getLength(DerInputStream.java:599)
+	at sun.security.util.DerValue.init(DerValue.java:391)
+	at sun.security.util.DerValue.<init>(DerValue.java:332)
+	at sun.security.util.DerValue.<init>(DerValue.java:345)
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:1914)
+	at java.security.KeyStore.load(KeyStore.java:1445)
+	at sun.security.tools.keytool.Main.doCommands(Main.java:795)
+	at sun.security.tools.keytool.Main.run(Main.java:343)
+	at sun.security.tools.keytool.Main.main(Main.java:336)
