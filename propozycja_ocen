@@ -1,0 +1,109 @@
+Propozycja ocen:
+
+Z powodu problemów z wrzucaniem plików na gitlab wrzucam wszystkie zadania na https://github.com/Dagmara2/Java
+
+Lab01 :  Zadanie ocenione na laboratorium
+    -propozycja oceny: ...
+    
+Ocena: 3,5+ (TK) trochę więcej niż 3,5
+
+
+Lab02 :  Zmiana języków, Pobieranie z NASA API problem z wyświetlaniem w tabeli (nie wiem co jest powodem).
+    -propozycja oceny: 
+
+Ocena: 3,5 (TK)
+    - brak obsługi wariantowości, brak wersji release, wyniki w konsoli
+    
+
+Lab03 :  Używanie WeakReferences do przeglądania obrazów w folderze.
+    -propozycja oceny: 3,5 
+
+Ocena: 3,0 (TK) znalazło się na githubie 3.04.2020 (czyli prawie dwa tygodnie po terminie). 
+     Zawartość tylko jednego pliku trafia do słabej referencji.
+     Brak logiki, która w przypadku usunięcia zawartości pliku przez GC załadowałaby plik na nowo.
+
+
+Lab04 :  Opis tego, co udało się zrobić
+    -propozycja oceny: ...
+    
+Ocena: 3,0 (TK) - komentarz przesłany mailem
+
+
+Lab05 :  Ustawianie czasu alarmu oraz wiadomości, problem z wyświetlaniem powiadomienia o alarmie, który postaram sie poprawić.
+    -propozycja oceny: 3,5
+    
+Ocena: 3,0-- (TK)  nieco mniej niż 3,0
+    Chyna nie zrozumiała Pani wzorca projektowego ziaren. Zgodnie z wymaganiami tego wzorca jeśli klasa ziarna nazywa się Bean, to klasa opisowa powinna nazywać się BeanBeanInfo (!!!)
+     Nie rozumiem znaczenia metod: setBean i getBean.
+     Nigdzie nie znalazłem wygenerowanego jara z ziarnem (jest jar z aplikacją). Zdaje się, że Pani te dwie rzeczy potraktowała jako jedną (!!!!)
+     Brak edytorów oraz customizera (!!!!)
+     
+
+Lab06 :  
+    -propozycja oceny: ...
+    
+Ocena: 3,0 (TK)  - komentarz przesłany mailem
+
+
+Lab07: Dodawanie klienta, usuwaniee klienta, podgląd klienta.
+    -propozycja oceny: 3,5
+
+Ocena: 3,5 (TK)  
+
+
+Lab08: 
+    -propozycja oceny: 
+
+Ocena: ... (TK)  
+
+
+Lab9: ponawiający się błąd w tworzeniu jara (screenshoty umieszczone w library_lab9)
+    -propozycja: 3
+
+Ocena: ??? (TK) Niestety nie mogę jeszcze wystawić pozytywnej oceny. W repozytorium brakuje źródeł kodu (aplikacja to same skompilowane klasy).
+    Ponadto jest bałagan. Sądząc po zawartości repozytorium generowała Pani jar o nazwie library_lab9.jar, natomiast na zrzucie z ekranu widać, że sięga Pani po jar o innej nazwie.
+    Aby zaliczyć ćwiczenie należy umieć wygenerować podpisany cyfrowo jar biblioteki oraz użyć tego jara podczas uruchamiania aplikacji (spakowanej do jara).
+    Proszę dostarczyć kod, wygenerować jary, poprawnie uruchomić aplikację.
+
+
+Lab10: 
+    -propozycja oceny: 
+
+Ocena: ... (TK)  
+
+
+Lab11: Nie udało mi się wygenerować pliku dll, wyskakuje błąd "statistics_Chi2.cpp(1): fatal error C1083: Nie można otworzyć pliku dołącz: 'jni.h': No such file or directory" 
+Mam również problem z kluczem ssh dla gitlaba (postaram się przenieść wszystkie projekty z githuba tutaj jak tylko będę miała dostep do innego komputera, przepraszam za problem)
+
+    -propozycja oceny:3,5
+    
+Ocena: 3,5-- (TK) - gdy kompiluje się pliki cpp należy ustawić ścieżki do katalogów z plikami nagłówkowymi (dla kompilatora) oraz ścieżki do katalogów z bibliotekami (dla linkera). 
+Jesli się tego nie zrobi kompilacja kodu natywnego nie ma prawa się udać. Może błąd, jaki Pani zauważyła, ma swoje źródło w braku wymienionych ustawień.
+
+Lab12 : 2 modyfikacje obrazów w JS i aplikacja wczytująca obrazy i skrypty
+    -propozycja : 3,5
+
+Ocena: 3,5 (TK) - chyba nie do końca zostało zrozumiene polecenie:
+    "Interfejs graficzny programu powinien być zaimplementowany z wykorzystaniem klas Javy. Oznacza to, że w  skrypcie należy zaimportować klasy Javy i je wykorzystać." 
+    Chodziło o to, by uruchomić skrypt js, który uruchamia kod Java, w którym uruchamiany jest js (chodziło o dokonanie przejścia ścieżką: js -> java -> js).
+    U Pani jest tylko java -> js.
+    
+
+Lab13: życzenia na 4 różne okazje z możliwością wyboru rand, najkrótszego i najdłuższego oraz dodaniem imienia do życzeń
+    - propozycja: 3,5
+
+Ocena: 3,5-- (TK) - ponownie nie wykonano w pełni polecenia (ocene może powinna być niższa):
+    "Na interfejsie aplikacji powinny pojawić się:
+       - pole na wprowadzanie Imienia osoby.
+       - opcje wyboru strategii wyboru życzenia (losowo, kolejno, najdłuższe, najkrótsze).
+       - lista wyboru szablonów życzeń (szablony życzeń powinny być składowane w plikach, których nazwy wyświetlane są na liście, 
+         można zastanowić się, czy do realizacji tego ćwiczenia nie wykorzystać boundli językowych - z nawiasami klamrowymi).
+       - pole tekstowe z życzeniami (wypełniane automatycznie po wprowadzeniu imienia, wyborze strategii i szablonu - z tego pola można skopiować tekst - 
+            jeśli ktoś chciałby np. wrzucić go do maila)
+       - lista wyboru stylu interfejsu (do wyboru powinny być przynajmniej dwa style css)
+    Proszę w gitowym repozytorium w gałęzi sources umieścić wszystkie źródła plus plik Readme.md (z dołączonymi zrzutami i opisem, jak uruchomić aplikację), 
+    w gałęzi releases - wykonywalny plik jar (z przygotowaniem jara może być problem - trzeba sprawdzić, czy pliki fxml, css oraz szablonów będą się ładować 
+    z tego jara, ostatecznie można je dystrybuować osobno)."
+    Brakuje: ładowania życzeń z plików, raportu Readme.md ze zrzutami, jara w gałęzi releases.
+    
+
