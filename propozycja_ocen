@@ -54,7 +54,7 @@ Ocena: 3,5 (TK)
 Lab08: 
     -propozycja oceny: 
 
-Ocena: ... (TK)  
+Ocena: 3,0 (TK)  - oddane zostało zadanie z zeszłego roku (ocena adekwatna do propozycji oceny przedstawionej w e-mailu). 
 
 
 Lab9: ponawiający się błąd w tworzeniu jara (screenshoty umieszczone w library_lab9)
@@ -108,3 +108,10 @@ Ocena: 3,5-- (TK) - ponownie nie wykonano w pełni polecenia (ocene może powinn
     
 Lab14: 3 różne kolejki, 3 różne priorytety, generowanie numerków dla klienta
         -propozycja:3
+
+Ocena: 3,0 (TK)
+   Ziarenko miało być zanurzone w aplikacji i służyć do tego, by zarządzać przez tylne drzwi tą aplikacją. Do tego ziarenka należało wysyłać żądania z własnego klienta.
+   U Pani ziarenko zarządza własnymi listami (służy jako serwer). Nie wiem, na jakich forach ktoś zaproponował takie rozwiązanie (nie jest Pani pierwszą osobą, która prezentuje tego typu rozwiązanie)
+   Co więcej, stworzyła Pani pętle while, która tworzy w nieskończoność ziarenka - za to nie powinienem w ogóle ocenić pozytywnie tej pracy.
+   
+  
