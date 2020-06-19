@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+" 
+        codebase="https://github.com/Dagmara2/Java/tree/sources/lab10"
+        href="lab10.jnlp">
+    <information>
+        <title>lab10</title>
+        <vendor>Dagmara Szykulska</vendor>
+<offline-allowed/>
+    </information>
+	<security>
+  		<all-permissions/>
+	</security>
+    <resources>
+        <j2se version="1.7+"         href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="slab9.jar"/>
+<jar href="slibrary_lab9.jar"/>
+<jar href="scommons-codec-1.14.jar"/>
+    </resources>
+    <application-desc
+         name="lab9"
+         main-class="app.sample.Main">
+     </application-desc>
+</jnlp>
