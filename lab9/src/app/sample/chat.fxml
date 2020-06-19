@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChatController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="272.0" prefWidth="534.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="sendBtn" layoutX="212.0" layoutY="152.0" mnemonicParsing="false" onAction="#sendMsg" style="-fx-background-color: GREEN;" text="Send" textFill="WHITE" />
+            <TextArea fx:id="msgArea" layoutX="17.0" layoutY="104.0" prefHeight="146.0" prefWidth="150.0" />
+            <Label fx:id="msgLabel" layoutX="375.0" layoutY="14.0" text="Messages:" />
+            <Label fx:id="sendLabel" layoutX="76.0" layoutY="74.0" text="Send: " />
+            <Button fx:id="selectBtn" layoutX="200.0" layoutY="92.0" mnemonicParsing="false" onAction="#selectKey" text="Select key" />
+            <TextField fx:id="nameTF" layoutX="18.0" layoutY="10.0" prefHeight="26.0" prefWidth="69.0" promptText="name" />
+            <TextField fx:id="portTF" layoutX="109.0" layoutY="11.0" prefHeight="26.0" prefWidth="70.0" promptText="port" />
+            <Button fx:id="decodeBtn" layoutX="376.0" layoutY="238.0" mnemonicParsing="false" onAction="#decodeMsg" text="Decode" />
+            <TextArea fx:id="recivedArea" layoutX="304.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

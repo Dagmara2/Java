@@ -1,0 +1,9 @@
+keystore password/key password: JAVAlab9
+
+keytool -genkeypair -keyalg rsa -keysize 1024 -alias lab9 -keystore lab9keys.jks -dname "CN=lab9 java"
+
+keytool -certreq -alias lab9 -keystore lab9keys.jks > lab9cert.csr
+
+keytool -export -keystore lab9keys.jks -alias lab9 -file lab9_pub.cer
+
+jarsigner -keystore lab9keys.jks -storepass JAVAlab9 -keypass JAVAlab9 -signedjar slab9.jar lab9.jar lab9
